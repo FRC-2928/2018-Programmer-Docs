@@ -1,0 +1,19 @@
+We use GradleRIO to build and deploy projecs so we can use IntelliJ as opposed to the official FRC Eclipse toolchain. To create a new project,
+1. Create a new Github repository in the FRC-2928 organization, probably something like VikingRobot2019
+2. Open up Git Bash, and type in
+      cd Documents
+      git clone https://github.com/FRC-2928/repositorynamegoeshere
+3. Unzip the contents of the latest GradleRIO quickstart zip (https://github.com/Open-RIO/GradleRIO) into Documents\repositoryname
+4. Ensure that you have gradle.build and gradlew.bat in the project root.
+5. In Git Bash, type in
+      git add .
+      git commit -m "New project setup"
+      git push origin master
+6. If you got any errors on the commit or push steps, follow the instructions given in the output
+7. Ensure that JAVA_HOME is properly set!
+8. In IntelliJ, choose "Import from Version Control" and choose Github.
+9. Log in with your Github credentials, and choose FRC-2928/repositorynamegoeshere
+10. When it asks if you want to import the gradle project, say yes, and enable auto import on the next screen.
+11. Set the team name in build.gradle to 2928, and rename every file/folder in the project that references to old team name to reflect the new change
+12. Attempt a build.
+13. If the build fails, it's likely because the school blocks a few domains that host GradleRIO dependencies, so consider using a wifi hotspot for the initial build
