@@ -1,0 +1,10 @@
+To set up computers for the 2018 season, we
+1. Used the built in factory reset feature to go back to a fresh Windows installation
+2. Fully updated with windows update
+3. Installed IntelliJ Community edition
+4. Installed Firefox, JDK8, JDK x64 8, Notepad++, Java 8, and 7-Zip with ninite.com
+5. Installed the FRC Update Suite (Currently using http://www.ni.com/download/first-robotics-software-2015/5112/en/ but google "FRC Update Suite to get the latest).
+6. Installed Git for Windows (git-scm.com/download/win)
+7. Set JAVA_HOME (see https://docs.oracle.com/cd/E19182-01/821-0917/inst_jdk_javahome_t/index.html for examples, make sure you pick the JDK in the "Program Files (x86)" folder, and you probably want jdk1.x as opposed to jdk9.x
+8. Opened IntelliJ, and set the Git path to the git.exe we just installed using Settings -> Version Control -> Git
+9. While in settings, set a password policy using Settings -> Appearance & Behavior -> System Settings -> Passwords -> Do not save passwords
