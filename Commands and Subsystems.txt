@@ -1,0 +1,17 @@
+We use a Command/Subsystem framework for programming the robot.
+In essence, this basically means two things:
+1. Robot functions are divided into subsystems (shooter subsystem, grabber subsystem, climber subsystem, etc.)
+2. Commands use subsystems to tie robot functions to buttons on the drive station.
+For example, say the robot has to have a ball shooter on it. The shooter works by feeding balls in from some sort of container and shooting them out with a flywheel.
+In essence, the shooter for our team's robot for the FIRST Steamworks 2017 Competition. Ask the mentors or some students who were around for that competition if you need more details.
+We would set up this shooter system like so:
+1. Create separate subsystems for the feeder and the flywheel.
+2. Set each subsystem up so that the correct motors are assigned. The motor for the flywheel is set up for the shooter subsystem, feeder motor is set up for the feeder subsystem.
+3. Our subsystems should be set up so that they take in a value from -1 to 1 for motor speed.
+4. Then we create commands. The drivers usually like to have lots of control, so we'll make three commands: one to spin the flywheel, one to spin the flywheel and move the feeder, and one to spin the feeder backwards in the case of a jam.
+5. In each command, we use the subsystems to make the motors turn.
+6. Finally, assign each subsystem to a button.
+Now, you've got commands for a shooting system!
+If you need more info, ask one of the mentors or google it.
+You can generally get to FIRST's wpilib documentation by googling something like "FIRST Robotics foobar", where foobar is what you're looking for.
+So for info on commands and subsystems, google something along the lines of "FIRST Robotics commands and subsystems".
